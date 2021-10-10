@@ -1,9 +1,8 @@
 {
-    "prefix": "",
     "token": "",
     "color": "",
     "channels": [],
     "send": [],
-    "focus": []
+    "ignored": []
   }
   

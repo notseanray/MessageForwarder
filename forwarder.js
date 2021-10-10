@@ -86,8 +86,8 @@ async function create_post(msg, send_channel) {
 
 
 client.on('message', msg => {
-    for (var i = 0; i < config.focus.length; i++) { 
-        if (msg.guild.id != config.focus[i]) return; 
+    for (var i = 0; i < config.ignored.length; i++) { 
+        if (msg.guild.id == config.ignored[i]) return; 
     }
     for (var i = 0; i < config.channels.length; i++) {
         if (msg.channel.id == config.channels[i]) create_post(msg, config.send[i]);
